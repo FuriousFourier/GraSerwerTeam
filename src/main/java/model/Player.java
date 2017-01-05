@@ -1,6 +1,6 @@
 package model;
 
-import java.util.Set;
+import java.util.List;
 
 /**
  * Created by pawel on 05.01.17.
@@ -8,7 +8,7 @@ import java.util.Set;
 public class Player {
     private String name;
     private Integer points;
-    private Set<Integer> dice;
+    private List<Integer> dice;
 
     public String getName() {
         return name;
@@ -26,15 +26,15 @@ public class Player {
         this.points = points;
     }
 
-    public Set<Integer> getDice() {
+    public List<Integer> getDice() {
         return dice;
     }
 
-    public void setDice(Set<Integer> dice) {
+    public void setDice(List<Integer> dice) {
         this.dice = dice;
     }
 
-    public Player(String name, Integer points, Set<Integer> dice) {
+    public Player(String name, Integer points, List<Integer> dice) {
 
         this.name = name;
         this.points = points;
